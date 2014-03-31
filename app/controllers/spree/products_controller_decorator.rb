@@ -8,4 +8,4 @@ Spree::ProductsController.class_eval do
       redirect_to new_gift_card_path and return false if @product.try :is_gift_card?
     end
 
-end
+end if Spree.const_defined? 'ProductsController'

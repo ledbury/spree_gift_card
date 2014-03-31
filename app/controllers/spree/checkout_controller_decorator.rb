@@ -28,4 +28,4 @@ Spree::CheckoutController.class_eval do
 
   end
 
-end
+end if Spree.const_defined? 'CheckoutController'

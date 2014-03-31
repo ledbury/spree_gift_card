@@ -17,4 +17,4 @@ Spree::StoreController.class_eval do
       end
     end
 
-end
+end if Spree.const_defined? 'StoreController'

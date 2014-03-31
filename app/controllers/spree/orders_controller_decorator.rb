@@ -4,4 +4,4 @@ Spree::OrdersController.class_eval do
 
   after_filter :apply_gift_code, only: :update
 
-end
+end if Spree.const_defined? 'OrdersController'
